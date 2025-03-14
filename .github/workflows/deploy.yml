@@ -11,8 +11,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.k20dp.mongodb.net
-      MONGODB_USERNAME: GTR-R35 
-      MONGODB_PASSWORD: YozCkQmVoOy08ysD
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }} 
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
